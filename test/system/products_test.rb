@@ -4,5 +4,6 @@ class ProductsTest < ApplicationSystemTestCase
   test "visiting the index" do
     visit "/"
     assert_selector "h1", text: "Products"
+    assert_selector ".product", count: Product.count
   end
 end
