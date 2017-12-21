@@ -15,7 +15,7 @@ class ProductsTest < ApplicationSystemTestCase
     fill_in "product_tagline", with: "Change your life: Learn to code"
     click_on 'Create Product'
 
-   #  save_and_open_screenshot
+    #  save_and_open_screenshot
 
     # Should be redirected to Home with new product
     assert_equal root_path, page.current_path
